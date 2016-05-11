@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+.underline {
+    width: 460px;
+    height: 100px;
+    padding-bottom: 40px;
+    margin: 100px auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.underline ul li {
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    background: cornflowerblue;
+    border-radius: 50%;
+    transition: background .5s linear 0s;
+}
+
+.underline ul li a {
+    display: block;
+    height: 100px;
+}
+
+.underline ul li i {
+    font-style: normal;
+    position: absolute;
+    bottom: -41px;
+    left: 35px;
+    width: 30px;
+    border-bottom: 1px solid #fff;
+}
+
+.underline ul li i:before, .underline ul li i:after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    width: 15px;
+    height: 10px;
+    border-bottom: 1px solid #ccc;
+    transition: all .2s linear 0s;
+}
+
+.underline ul li i:before {
+    left: 0;
+    transform-origin: 0% 100%;
+}
+
+.underline ul li i:after {
+    right: 0;
+    transform-origin: right bottom;
+}
+
+.underline ul li:first-child {
+    margin-left: 0;
+}
+
+.underline ul li:hover {
+    background: darkgreen;
+}
+
+.underline ul li:hover i:before {
+    width: 22px;
+    transform: rotate(-45deg);
+}
+
+.underline ul li:hover i:after {
+    width: 22px;
+    transform: rotate(45deg);
+}
+
+/*# sourceMappingURL=style.css.map */
